@@ -24,7 +24,7 @@ class Grade extends StatelessWidget { //첫번째 메인 화면 구성
   Widget build(BuildContext context) {
 
     return Scaffold(
-      backgroundColor: Colors.teal[200],
+      backgroundColor: Color.fromRGBO(148, 208,206,1),
 
       body: Center(
 
@@ -46,6 +46,8 @@ class Grade extends StatelessWidget { //첫번째 메인 화면 구성
 
                     Image(
                       image:AssetImage('image/20-layers.png'),
+                      width:154,
+                      height:67,
                     ),
 
                     SizedBox(
