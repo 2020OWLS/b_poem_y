@@ -52,7 +52,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      backgroundColor: Colors.teal[200], //배경색 지정
+      backgroundColor: Color.fromRGBO(148, 208,206,1), //배경색 지정
       body:
 
       new Container(
@@ -75,6 +75,8 @@ class _LoginPageState extends State<LoginPage> {
 
                     Image(
                       image:AssetImage('image/20-layers.png'),
+                      width:154,
+                      height:67,
                     ),
 
                     SizedBox( //공백
@@ -142,7 +144,7 @@ class _LoginPageState extends State<LoginPage> {
 
                                 value: rememberMe,
                                 activeColor: Colors.white,
-                                checkColor: Colors.teal[200],
+                                checkColor: Color.fromRGBO(148, 208,206,1),
 
                                 onChanged: _onRememberMeChanged,
 
@@ -173,16 +175,16 @@ class _LoginPageState extends State<LoginPage> {
                       ButtonTheme(
                         minWidth: 350.0,
                         height: 50.0,
-                        child: new RaisedButton( //사인업 버튼 부분
+                        child: new RaisedButton( //사인인 버튼 부분
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5.0),// 박스 모서리 둥글기 조정
                               side: BorderSide(color: Colors.white)), //박스 테두리 색 조정
-                          color: Colors.teal[200], //박스 내부 색 조정
+                          color: Color.fromRGBO(148, 208,206,1), //박스 내부 색 조정
                           textColor: Colors.white,
 
 
                           child: Image(
-                            image:AssetImage('image/Sign_in.png'),
+                            image:AssetImage('image/Sign_In.png'),
                             width:58,
                             height:17,
                           ),
@@ -199,13 +201,10 @@ class _LoginPageState extends State<LoginPage> {
 
                       children: <Widget>[
                         FlatButton(
-                          child: Text('Forget?',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 19.0,
-                              fontWeight: FontWeight.w400,
-                              letterSpacing: 1.0,
-                            ),
+                          child:  Image(
+                        image:AssetImage('image/Forget_.png'),
+                            width:68,
+                            height:18,
                           ),
                           onPressed: (){
                             Navigator.push(
@@ -221,13 +220,10 @@ class _LoginPageState extends State<LoginPage> {
                         ),
 
                         FlatButton(
-                          child: Text('Sign Up',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.w400,
-                              letterSpacing: 1.0,
-                            ),
+                          child:  Image(
+                            image:AssetImage('image/Sign_Up.png'),
+                            width:72,
+                            height:19,
                           ),
                           onPressed: (){  Navigator.push(
                               context,
