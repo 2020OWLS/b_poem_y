@@ -52,7 +52,7 @@ class _SignUpWithEmailPageState extends State<SignUpWithEmailPage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      backgroundColor: Colors.teal[200], //배경색 지정
+      backgroundColor: Color.fromRGBO(148, 208,206,1), //배경색 지정
       body:
 
       new Container(
@@ -181,7 +181,7 @@ class _SignUpWithEmailPageState extends State<SignUpWithEmailPage> {
 
                                 value: rememberMe,
                                 activeColor: Colors.white,
-                                checkColor: Colors.teal[200],
+                                checkColor: Color.fromRGBO(148, 208,206,1),
 
                                 onChanged: _onRememberMeChanged,
 
