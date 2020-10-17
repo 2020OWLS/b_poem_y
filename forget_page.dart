@@ -11,7 +11,7 @@ class _ForgetPageState extends State<ForgetPage> {
   Widget build(BuildContext context) {
 
     return Scaffold(
-        backgroundColor: Colors.teal[200],
+        backgroundColor: Color.fromRGBO(148, 208,206,1),
 
         body: Center(
 
@@ -26,8 +26,14 @@ class _ForgetPageState extends State<ForgetPage> {
                   mainAxisAlignment: MainAxisAlignment.center, // 주 축 기준 중앙
                   children: <Widget>[
 
-                    FlatButton(
-                      child: Text('Forget Page test',
+                    Image(
+                      image:AssetImage('image/20-layers.png'),
+                      width:154,
+                      height:67,
+                    ),
+
+
+                      Text('Forget Page test',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 20.0,
@@ -36,8 +42,6 @@ class _ForgetPageState extends State<ForgetPage> {
                         ),
                       ),
 
-
-                    ),
 
                   ],
                 ),
