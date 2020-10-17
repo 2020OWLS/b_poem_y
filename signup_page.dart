@@ -17,7 +17,7 @@ class _SignUpPageState extends State<SignUpPage> {
   Widget build(BuildContext context) {
 
     return Scaffold(
-      backgroundColor: Colors.teal[200],
+      backgroundColor: Color.fromRGBO(148, 208,206,1),
 
       body: Center(
 
@@ -31,6 +31,17 @@ class _SignUpPageState extends State<SignUpPage> {
               Column(
                   mainAxisAlignment: MainAxisAlignment.center, // 주 축 기준 중앙
                   children: <Widget>[
+
+                    Image(
+                      image:AssetImage('image/21-layers.png'),
+                      width:154,
+                      height:112,
+                    ),
+
+                    SizedBox(
+                      height: 70.0,
+                    ),
+
 
                     GoogleSignInButton(
                       onPressed: () {/* ... */},
@@ -48,7 +59,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(5.0),// 박스 모서리 둥글기 조정
                             side: BorderSide(color: Colors.white)), //박스 테두리 색 조정
-                        color: Colors.teal[200], //박스 내부 색 조정
+                        color: Color.fromRGBO(148, 208,206,1), //박스 내부 색 조정
                         textColor: Colors.white,
 
 
