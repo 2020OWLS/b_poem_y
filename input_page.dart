@@ -25,7 +25,7 @@ class _InputPageState extends State<InputPage> {
 }
 
 
-class MyPage extends StatelessWidget {
+  class MyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,7 +35,7 @@ class MyPage extends StatelessWidget {
 
     child: SingleChildScrollView(
     child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
 
           children: <Widget>[
 
@@ -46,6 +46,9 @@ class MyPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
 
+                    SizedBox(
+                      height:100,
+                    ),
 
                     FlatButton(
                         child:  Image(
