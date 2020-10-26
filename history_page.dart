@@ -18,7 +18,7 @@ class _HistoryPageState extends State<HistoryPage> {
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
 
               children: <Widget>[
                 Center(
@@ -49,7 +49,6 @@ class _HistoryPageState extends State<HistoryPage> {
                                   RawMaterialButton(
                                     constraints: BoxConstraints.tight(Size(40, 40)),
                                     onPressed:(){
-                                      Navigator.pop(context);
                                     },
                                     child: Image(
                                       image:AssetImage('image/Oval (1).png'),
@@ -92,7 +91,12 @@ class _HistoryPageState extends State<HistoryPage> {
                   ),
                 ),
 
+                SizedBox(
+                  height: 500,
+                ),
+
               ],
+
             ),
           ),
         ),
